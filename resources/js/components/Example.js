@@ -72,7 +72,7 @@ export default class Example extends Component {
     {
         try 
         {
-            let res = await fetch(`${url}/api/transfer`)
+            let res = await fetch(`${url}/api/wallet`)
             let data = await res.json()
             this.setState({
                 money: data.money,
